@@ -17,9 +17,9 @@ namespace QuadraticCalculatorXUnit
         }
 
         [Theory]
-        [InlineData("Дискриминант меньше нуля. Корней нет.",-4, 1, 0)]
-        [InlineData("Дискриминант равен нулю. Корень равен -1", 0, 2, 4)]
-        [InlineData("Дискриминант равен 53. Первый корень равен -3,07. Второй корень равен 0,57", 53, 2, 5)]
+        [InlineData("Р”РёСЃРєСЂРёРјРёРЅР°РЅС‚ РјРµРЅСЊС€Рµ РЅСѓР»СЏ. РљРѕСЂРЅРµР№ РЅРµС‚.",-4, 1, 0)]
+        [InlineData("Р”РёСЃРєСЂРёРјРёРЅР°РЅС‚ СЂР°РІРµРЅ РЅСѓР»СЋ. РљРѕСЂРµРЅСЊ СЂР°РІРµРЅ -1", 0, 2, 4)]
+        [InlineData("Р”РёСЃРєСЂРёРјРёРЅР°РЅС‚ СЂР°РІРµРЅ 53. РџРµСЂРІС‹Р№ РєРѕСЂРµРЅСЊ СЂР°РІРµРЅ -3,07. Р’С‚РѕСЂРѕР№ РєРѕСЂРµРЅСЊ СЂР°РІРµРЅ 0,57", 53, 2, 5)]
         public void CheckDescriminantTheory(string expected, double checkD, double a , double b )
         {
             string actual = Program.CheckDescriminant(checkD, a, b);
@@ -79,7 +79,7 @@ namespace QuadraticCalculatorXUnit
         //    double checkD = -4;
         //    double a = 1;
         //    double b = 0;
-        //    string expected = "Дискриминант меньше нуля. Корней нет.";
+        //    string expected = "Р”РёСЃРєСЂРёРјРёРЅР°РЅС‚ РјРµРЅСЊС€Рµ РЅСѓР»СЏ. РљРѕСЂРЅРµР№ РЅРµС‚.";
         //    string actual = Program.CheckDescriminant(checkD, a, b);
         //    Assert.Equal(expected, actual);
         //}
@@ -111,7 +111,7 @@ namespace QuadraticCalculatorXUnit
         //    double checkD = 0;
         //    double a = 2;
         //    double b = 4;
-        //    string expected = "Дискриминант равен нулю. Корень равен -1";
+        //    string expected = "Р”РёСЃРєСЂРёРјРёРЅР°РЅС‚ СЂР°РІРµРЅ РЅСѓР»СЋ. РљРѕСЂРµРЅСЊ СЂР°РІРµРЅ -1";
         //    string actual = Program.CheckDescriminant(checkD, a, b);
         //    Assert.Equal(expected, actual);
         //}
@@ -155,7 +155,7 @@ namespace QuadraticCalculatorXUnit
         //    double checkD = 53;
         //    double a = 2;
         //    double b = 5;
-        //    string expected = "Дискриминант равен 53. Первый корень равен -3,07. Второй корень равен 0,57";
+        //    string expected = "Р”РёСЃРєСЂРёРјРёРЅР°РЅС‚ СЂР°РІРµРЅ 53. РџРµСЂРІС‹Р№ РєРѕСЂРµРЅСЊ СЂР°РІРµРЅ -3,07. Р’С‚РѕСЂРѕР№ РєРѕСЂРµРЅСЊ СЂР°РІРµРЅ 0,57";
         //    string actual = Program.CheckDescriminant(checkD, a, b);
         //    Assert.Equal(expected, actual);
         //}
